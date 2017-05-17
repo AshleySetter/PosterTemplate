@@ -1,0 +1,114 @@
+%
+% This is file `FONTSIZE34pt.clo', generated with
+% scrfontsizes 2015/05/06 v3.17a KOMA-Script package (font size file generator),
+% Copyright (c) Markus Kohm.
+%
+\ProvidesFile{FONTSIZE34pt.clo}[2016/05/24 generated font size class option (34pt)]
+\def\normalsize{%
+  \@setfontsize\normalsize{34}{40.7999pt}%
+  \abovedisplayskip 33.99846pt plus 6.80142pt minus 20.39995pt
+  \abovedisplayshortskip 0.0pt plus 10.19997pt
+  \belowdisplayskip 33.99846pt plus 6.80142pt minus 20.39995pt
+  \belowdisplayshortskip 20.39995pt plus 10.19997pt minus 10.19997pt
+  \let\@listi\@listI
+}%
+\def\small{%
+  \@setfontsize\small{31.0252}{37.23015pt}%
+  \abovedisplayskip 31.02379pt plus 6.20634pt minus 18.61507pt
+  \abovedisplayshortskip 0.0pt plus 9.30753pt
+  \belowdisplayskip 31.02379pt plus 6.20634pt minus 18.61507pt
+  \belowdisplayshortskip 18.61507pt plus 9.30753pt minus 9.30753pt
+  \def\@listi{%
+    \leftmargin\leftmargini
+    \topsep13.59851pt plus 6.80142pt minus 6.80142pt
+    \parsep6.80142pt plus 3.39853pt minus 3.39853pt
+    \itemsep\parsep
+  }%
+}%
+\def\footnotesize{%
+  \@setfontsize\footnotesize{28.33368}{34.00032pt}%
+  \abovedisplayskip 28.33238pt plus 5.66792pt minus 17.00015pt
+  \abovedisplayshortskip 0.0pt plus 8.50008pt
+  \belowdisplayskip 28.33238pt plus 5.66792pt minus 17.00015pt
+  \belowdisplayshortskip 17.00015pt plus 8.50008pt minus 8.50008pt
+  \def\@listi{%
+    \leftmargin\leftmargini
+    \topsep10.19997pt plus 5.09998pt minus 5.09998pt
+    \parsep5.09998pt plus 2.54999pt minus 2.54999pt
+    \itemsep\parsep
+  }%
+}%
+\def\scriptsize{\@setfontsize\scriptsize{22.66684}{27.20013pt}}%
+\def\tiny{\@setfontsize\tiny{17}{20.39995pt}}%
+\def\large{\@setfontsize\large{40.7999}{48.95975pt}}%
+\def\Large{\@setfontsize\Large{48.96008}{58.75194pt}}%
+\def\LARGE{\@setfontsize\LARGE{58.75189}{70.50209pt}}%
+\def\huge{\@setfontsize\huge{70.51617}{84.61919pt}}%
+\def\Huge{\@setfontsize\Huge{84.59222}{101.5104pt}}%
+\normalsize
+\setlength{\footnotesep}{22.64363pt}%
+\setlength{\skip\footins}{30.59991pt plus 13.59851pt minus 6.80142pt}%
+\setlength{\floatsep}{40.7999pt plus 6.80142pt minus 6.80142pt}%
+\setlength{\textfloatsep}{68.00127pt plus 6.80142pt minus 13.59851pt}%
+\setlength{\intextsep}{40.7999pt plus 6.80142pt minus 6.80142pt}%
+\setlength{\dblfloatsep}{40.7999pt plus 6.80142pt minus 6.80142pt}%
+\setlength{\dbltextfloatsep}{68.00127pt plus 6.80142pt minus 13.59851pt}%
+\setlength{\@fptop}{0.0pt plus 1.0fil}%
+\setlength{\@fpsep}{27.20137pt plus 2.0fil}%
+\setlength{\@fpbot}{0.0pt plus 1.0fil}%
+\setlength{\@dblfptop}{0.0pt plus 1.0fil}%
+\setlength{\@dblfpsep}{27.20137pt plus 2.0fil}%
+\setlength{\@dblfpbot}{0.0pt plus 1.0fil}%
+\setlength{\partopsep}{8.15985pt plus 4.08023pt minus 4.08023pt}%
+\def\@listi{%
+  \leftmargin\leftmargini
+  \topsep27.20137pt plus 6.80142pt minus 13.59851pt
+  \parsep13.59851pt plus 6.80142pt minus 3.39853pt
+  \itemsep\parsep
+}%
+\let\@listI\@listi
+\def\@listii{%
+  \leftmargin\leftmarginii
+  \labelwidth\leftmarginii
+  \advance\labelwidth-\labelsep
+  \topsep13.59851pt plus 6.80142pt minus 3.39853pt
+  \parsep6.80142pt plus 3.39853pt minus 3.39853pt
+  \itemsep\parsep
+}%
+\def\@listiii{%
+  \leftmargin\leftmarginiii
+  \labelwidth\leftmarginiii
+  \advance\labelwidth-\labelsep
+  \topsep6.80142pt plus 3.39853pt minus 3.39853pt
+  \parsep0.0pt
+  \partopsep0.0pt minus 1.0pt
+  \itemsep\topsep
+}%
+\def\@listiv{%
+  \leftmargin\leftmarginiv
+  \labelwidth\leftmarginiv
+  \advance\labelwidth-\labelsep
+}%
+\def\@listv{%
+  \leftmargin\leftmarginv
+  \labelwidth\leftmarginv
+  \advance\labelwidth-\labelsep
+}%
+\def\@listvi{%
+  \leftmargin\leftmarginvi
+  \labelwidth\leftmarginvi
+  \advance\labelwidth-\labelsep
+}%
+\@ifundefined{@list@extra}{}{%
+\expandafter\ifnum\scr@v@is@ge{3.17}\par@updaterelative\fi
+  \l@addto@macro{\@listi}{\@list@extra}%
+  \let\@listI=\@listi
+  \l@addto@macro{\@listii}{\@list@extra}%
+  \l@addto@macro{\@listiii}{\@list@extra}%
+  \l@addto@macro{\footnotesize}{\protect\add@extra@listi{ftns}}%
+  \l@addto@macro{\small}{\protect\add@extra@listi{sml}}%
+}%
+\@listi
+\endinput
+%
+% End of file `FONTSIZE34pt.clo'. 

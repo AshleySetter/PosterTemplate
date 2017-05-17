@@ -1,0 +1,188 @@
+\pdfminorversion=4
+\documentclass[25pt, a1papper, portrait, margin=0mm, innermargin=35mm, blockverticalspace=0mm]{tikzposter}
+\usepackage[utf8]{inputenc}
+
+\tikzposterlatexaffectionproofoff
+
+\usepackage{setspace}
+
+\usepackage{blindtext}
+\usepackage{comment}
+\usepackage[numbers, square]{natbib}  % bibliography package
+% natbib arguments:
+% numbers - numeric citations
+% round - round brackets around citations
+% square - square brackets around citations
+% super - superscript citations
+
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{multicol} % allows use of \begin{multicols}{NumCols} \end{multicols} to split section of text into columns 
+
+\usepackage[none]{hyphenat}
+
+\definecolor{UOSBrand}{RGB}{0,90,135}
+%\definecolor{wrongultramarine}{rgb}{0.07, 0.04, 0.56}
+
+\usetheme{Simple}
+
+%\usecolorpalette{Britain}
+
+%\usecolorstyle[colorPalette=BrownOrangeBlue,colorOne=blue,colorTwo=black,colorThree=green]{MyStyle}
+%\usecolorpalette{MyStyle}
+
+\colorlet{titlebgcolor}{UOSBrand}
+%\colorlet{blocktitlebgcolor}{blue} % title block background colour
+\colorlet{blocktitlefgcolor}{UOSBrand} % title block text colour
+%\colorlet{blockbodybgcolor}{green} % body block background colour
+%\colorlet{blockbodyfgcolor}{} % body block text colour
+
+\hyphenation{thatshouldnot} % Don't break and hyphonate words over 2 lines
+
+\makeatletter
+\input{FONTSIZE28pt.clo} % in this directory there is a latex script ``MakeFontSize.tex'' that creates a FONTSIZE file allowing you to use larger Font Sizes than is natively supported
+\makeatother
+
+%\title{\parbox{\linewidth}{\centering Cooling and Quantum State  Preperation of a Levitated Optomechnical Oscillator}}
+
+\title{\parbox{\linewidth}{\centering Test Title}}
+\author{\vspace{0.3cm} Me \\ Me@soton.ac.uk }
+\date{\today}
+\institute{University of Southampton}
+\titlegraphic{
+        \centering
+                \includegraphics[]{images/ngcm_logo.pdf} 
+         \hspace{55cm}
+         \vspace{2cm}
+                \includegraphics[scale=0.06]{images/uos_white_large.png} 
+}
+
+
+% \settitle{ \centering \vbox{
+%      \@titlegraphic {\includegraphics[]{images/ngcm_logo.pdf} \raggedleft }
+%                     { \includegraphics[scale=0.06]{images/uos_white_large.png} \raggedright }
+%           \color{titlefgcolor} {\bfseries \Huge \sc \parbox{\linewidth}{\centering Quantum State Preparation in Levitated Optomechanics} \par}
+%                \vspace*{1em}
+%                     {\huge Ashley Setter \par} \vspace*{1em} {\LARGE University of Southampton}
+%                     }}
+
+
+\begin{document}
+
+
+%\begin{pgfinterruptboundingbox} % NGCM logo
+%\newcommand{\x}{-32}
+%\newcommand{\y}{48}
+%\newcommand{\scale}{2.0}
+	%\scalebox{\scale} {
+%		\begin{tikzpicture}
+%			\begin{pgfinterruptboundingbox}
+%				\node[scale=\scale, inner sep=0pt] (NGCM_Logo) at (\x,\y)
+%					{
+%   						\includegraphics[]{images/ngcm_logo.pdf}
+%    				};
+%			\end{pgfinterruptboundingbox}	
+%		\end{tikzpicture}
+	%}
+%\end{pgfinterruptboundingbox}
+
+\begin{pgfinterruptboundingbox} % EPSRC logo
+\newcommand{\x}{-31}
+\newcommand{\y}{-51}
+\newcommand{\scale}{1.0}
+	%\scalebox{\scale} {
+		\begin{tikzpicture}
+			\begin{pgfinterruptboundingbox}
+				\node[scale=\scale, inner sep=0pt] (EPSRC_logo) at (\x,\y)
+					{
+    				
+   						\includegraphics[]{images/EPSRC_Logo.eps}
+    				
+    				};
+			\end{pgfinterruptboundingbox}	
+		\end{tikzpicture}
+	%}
+\end{pgfinterruptboundingbox}
+
+%\begin{pgfinterruptboundingbox} % UOS logo
+%\newcommand{\x}{35}
+%\newcommand{\y}{44}
+%\newcommand{\scale}{0.08}
+%		\begin{tikzpicture}
+%			\begin{pgfinterruptboundingbox}
+%				\node[scale=\scale, inner sep=0pt] (UOS_Logo) at (\x,\y)
+%					{
+%    				
+%   						\includegraphics[]{images/uos_blue_large.png}
+%    				
+%    				};
+%			\end{pgfinterruptboundingbox}	
+%		\end{tikzpicture}
+%\end{pgfinterruptboundingbox}
+
+\maketitle[width=90cm, titletotopverticalspace=0cm]
+
+%% CONTENT BEGINS HERE:
+
+\begin{columns}
+      \column{0.6}
+      \block{Some stuff}
+      {
+        \blindtext
+      }
+      \column{0.4}
+      \block{}{
+          \begin{tikzfigure}[A picture of a lion]
+            \includegraphics[width=0.15\textwidth]{images/lion-logo.png}
+          \end{tikzfigure}
+          Blah Blah Blah... \cite{latexcompanion}
+      }
+      \end{columns}
+
+\begin{columns}
+\column{0.4}
+\block{}{
+        \vspace{-1.2cm}
+          \begin{tikzfigure}[\small A lion pic]
+          \includegraphics[width=0.32\textwidth]{images/lion-logo.png}
+          \label{ALionPic}
+          \end{tikzfigure}
+          \vspace{-2cm}
+}
+\column{0.6}
+\block{Some other stuff}
+{
+  \blindtext
+  \begin{itemize}
+%      \setlength\itemsep{-0.3cm}
+      \item a
+      \item b
+      \item c
+      \end{itemize}
+      }
+\end{columns}
+
+%\block{} % acknowledgement and references
+%    {
+%    \vspace{0cm}
+      \begin{columns}
+      \column{0.2}
+        \block{}{
+        }
+      \column{0.8}
+        \block{}{
+%          \begin{multicols}{1}
+                      
+          \textbf{I would like to acknowledge ???}
+          %\renewcommand\refname{\vskip -4cm}
+          \small
+          %Bibliography.bib,
+          \bibliography{Bibliography.bib}
+          \bibliographystyle{unsrtnat}  % {humannat} % unsrtnat}
+%          \end{multicols}
+        }
+      \end{columns}
+%     } 
+      
+\end{document}
